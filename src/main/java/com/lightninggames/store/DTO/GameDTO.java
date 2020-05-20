@@ -1,6 +1,7 @@
 package com.lightninggames.store.DTO;
 
 import java.io.Serializable;
+import java.util.Optional;
 
 import com.lightninggames.store.domain.Game;
 
@@ -24,6 +25,15 @@ public class GameDTO implements Serializable{
 		plataforma = obj.getPlataforma();
 		preco = obj.getPreco();
 		disponibilidade = obj.getDisponibilidade();
+	}
+	
+	public GameDTO(Optional<Game> obj) {
+		id = obj.get().getId();
+		nome = obj.get().getNome();
+		key = obj.get().getKey();
+		plataforma = obj.get().getPlataforma();
+		preco = obj.get().getPreco();
+		disponibilidade = obj.get().getDisponibilidade();
 	}
 
 	public String getId() {
