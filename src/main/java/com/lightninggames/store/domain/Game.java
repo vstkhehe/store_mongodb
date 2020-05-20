@@ -17,12 +17,12 @@ public class Game implements Serializable {
 	private String key;
 	private String plataforma;
 	private String preco;
-	private String disponibilidade;
+	private int disponibilidade;
 	
 	public Game() {	
 	}
 
-	public Game(String id, String nome, String key, String plataforma, String preco, String disponibilidade) {
+	public Game(String id, String nome, String key, String plataforma, String preco, int disponibilidade) {
 		
 		super();
 		this.id = id;
@@ -73,11 +73,11 @@ public class Game implements Serializable {
 		this.preco = preco;
 	}
 
-	public String getDisponibilidade() {
+	public int getDisponibilidade() {
 		return disponibilidade;
 	}
 
-	public void setDisponibilidade(String disponibilidade) {
+	public void setDisponibilidade(int disponibilidade) {
 		this.disponibilidade = disponibilidade;
 	}
 
