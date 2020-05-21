@@ -9,6 +9,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
 import com.lightninggames.store.DTO.AuthorDTO;
+import com.lightninggames.store.DTO.CommentDTO;
 import com.lightninggames.store.domain.Game;
 import com.lightninggames.store.domain.Post;
 import com.lightninggames.store.repository.GameRepository;
@@ -40,7 +41,15 @@ public class Instantiation implements CommandLineRunner{
 		
 		Post post1 = new Post (null, sdf.parse("21/05/2020"), "Mad Max", "Promoção", new AuthorDTO(madmax));
 		
+		CommentDTO key = new CommentDTO("3123-ASDASD-21321-ASDSD", sdf.parse("21/05/2020"), new AuthorDTO(madmax));
+		CommentDTO key2 = new CommentDTO("1234-KHJK-6554-VCZCX", sdf.parse("21/05/2020"), new AuthorDTO(madmax));
+				
+		post1.getComments().addAll(Arrays.asList(key, key2));
+		
 		postRepository.saveAll(Arrays.asList(post1));
+		
+		madmax.getPosts().addAll(Arrays.asList(post1));
+		gameRepository.save(madmax);
 	}
 
 }

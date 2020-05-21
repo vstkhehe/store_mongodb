@@ -1,8 +1,11 @@
 package com.lightninggames.store.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="games")
@@ -18,6 +21,10 @@ public class Game implements Serializable {
 	private String plataforma;
 	private String preco;
 	private int disponibilidade;
+	
+	
+	@DBRef(lazy=true)
+	private List<Post> posts = new ArrayList<>();
 	
 	public Game() {	
 	}
@@ -80,6 +87,14 @@ public class Game implements Serializable {
 	public void setDisponibilidade(int disponibilidade) {
 		this.disponibilidade = disponibilidade;
 	}
+	
+	public List<Post> getPosts() {
+		return posts;
+	}
+
+	public void setPosts(List<Post> posts) {
+		this.posts = posts;
+	}
 
 	@Override
 	public int hashCode() {
@@ -115,4 +130,5 @@ public class Game implements Serializable {
 			return false;
 		return true;
 	}
+
 }

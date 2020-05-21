@@ -16,6 +16,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.lightninggames.store.DTO.GameDTO;
 import com.lightninggames.store.domain.Game;
+import com.lightninggames.store.domain.Post;
 import com.lightninggames.store.services.GameService;
 
 @RestController
@@ -59,5 +60,11 @@ public class GameResource {
 		obj.setId(id);
 		obj = service.update(obj);
 		return ResponseEntity.noContent().build();
+	}
+	
+	@RequestMapping(value="/{id}/posts", method=RequestMethod.GET)
+	public ResponseEntity<List<Post>> findPosts(@PathVariable String id){
+		Optional<Game> obj = service.findById(id);		
+		return ResponseEntity.ok().body(obj.get().getPosts());
 	}
 }
