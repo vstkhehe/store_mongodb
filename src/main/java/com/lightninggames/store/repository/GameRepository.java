@@ -8,4 +8,5 @@ import com.lightninggames.store.domain.Game;
 @Repository
 public interface GameRepository extends MongoRepository<Game, String>{
 
+
 }
