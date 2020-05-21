@@ -6,6 +6,8 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.lightninggames.store.DTO.AuthorDTO;
+
 @Document
 public class Post implements Serializable{
 	private static final long serialVersionUID = 1L;
@@ -15,13 +17,13 @@ public class Post implements Serializable{
 	private Date date;
 	private String title;
 	private String body;
-	private Game game;
+	private AuthorDTO game;
 	
 	public Post() {
 		
 	}
 
-	public Post(String id, Date date, String title, String body, Game game) {
+	public Post(String id, Date date, String title, String body, AuthorDTO game) {
 		super();
 		this.id = id;
 		this.date = date;
@@ -62,11 +64,11 @@ public class Post implements Serializable{
 		this.body = body;
 	}
 	
-	public Game getGame() {
+	public AuthorDTO getGame() {
 		return game;
 	}
 
-	public void setGame(Game game) {
+	public void setGame(AuthorDTO game) {
 		this.game = game;
 	}
 
