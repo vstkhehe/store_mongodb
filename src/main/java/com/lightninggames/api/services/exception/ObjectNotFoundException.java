@@ -1,4 +1,4 @@
-package com.lightninggames.store.services.exception;
+package com.lightninggames.api.services.exception;
 
 public class ObjectNotFoundException extends RuntimeException {
 

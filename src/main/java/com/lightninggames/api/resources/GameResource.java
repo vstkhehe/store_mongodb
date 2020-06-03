@@ -1,4 +1,4 @@
-package com.lightninggames.store.resources;
+package com.lightninggames.api.resources;
 
 import java.net.URI;
 import java.util.List;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.lightninggames.store.DTO.GameDTO;
-import com.lightninggames.store.domain.Game;
-import com.lightninggames.store.domain.Post;
-import com.lightninggames.store.services.GameService;
+import com.lightninggames.api.DTO.GameDTO;
+import com.lightninggames.api.domain.Game;
+import com.lightninggames.api.domain.Post;
+import com.lightninggames.api.services.GameService;
 
 @RestController
 @RequestMapping(value="/games")

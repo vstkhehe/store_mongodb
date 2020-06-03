@@ -1,4 +1,4 @@
-package com.lightninggames.store.config;
+package com.lightninggames.api.config;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -8,12 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
-import com.lightninggames.store.DTO.AuthorDTO;
-import com.lightninggames.store.DTO.CommentDTO;
-import com.lightninggames.store.domain.Game;
-import com.lightninggames.store.domain.Post;
-import com.lightninggames.store.repository.GameRepository;
-import com.lightninggames.store.repository.PostRepository;
+import com.lightninggames.api.DTO.AuthorDTO;
+import com.lightninggames.api.DTO.CommentDTO;
+import com.lightninggames.api.domain.Game;
+import com.lightninggames.api.domain.Post;
+import com.lightninggames.api.repository.GameRepository;
+import com.lightninggames.api.repository.PostRepository;
 
 @Configuration
 public class Instantiation implements CommandLineRunner{

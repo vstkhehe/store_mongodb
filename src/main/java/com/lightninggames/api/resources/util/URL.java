@@ -1,4 +1,4 @@
-package com.lightninggames.store.resources.util;
+package com.lightninggames.api.resources.util;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

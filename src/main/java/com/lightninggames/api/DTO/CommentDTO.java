@@ -1,4 +1,4 @@
-package com.lightninggames.store.DTO;
+package com.lightninggames.api.DTO;
 
 import java.io.Serializable;
 import java.util.Date;

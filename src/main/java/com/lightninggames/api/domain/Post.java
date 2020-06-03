@@ -1,4 +1,4 @@
-package com.lightninggames.store.domain;
+package com.lightninggames.api.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.lightninggames.store.DTO.AuthorDTO;
-import com.lightninggames.store.DTO.CommentDTO;
+import com.lightninggames.api.DTO.AuthorDTO;
+import com.lightninggames.api.DTO.CommentDTO;
 
 
 @Document

@@ -1,8 +1,8 @@
-package com.lightninggames.store.DTO;
+package com.lightninggames.api.DTO;
 
 import java.io.Serializable;
 
-import com.lightninggames.store.domain.Game;
+import com.lightninggames.api.domain.Game;
 
 public class AuthorDTO implements Serializable{
 	private static final long serialVersionUID = 1L;

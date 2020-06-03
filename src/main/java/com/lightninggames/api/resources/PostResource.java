@@ -1,4 +1,4 @@
-package com.lightninggames.store.resources;
+package com.lightninggames.api.resources;
 
 import java.util.Date;
 import java.util.List;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lightninggames.store.domain.Post;
-import com.lightninggames.store.resources.util.URL;
-import com.lightninggames.store.services.PostService;
+import com.lightninggames.api.domain.Post;
+import com.lightninggames.api.resources.util.URL;
+import com.lightninggames.api.services.PostService;
 
 @RestController
 @RequestMapping(value="/posts")

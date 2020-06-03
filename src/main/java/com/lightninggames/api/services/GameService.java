@@ -1,4 +1,4 @@
-package com.lightninggames.store.services;
+package com.lightninggames.api.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,10 +6,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.lightninggames.store.DTO.GameDTO;
-import com.lightninggames.store.domain.Game;
-import com.lightninggames.store.repository.GameRepository;
-import com.lightninggames.store.services.exception.ObjectNotFoundException;
+import com.lightninggames.api.DTO.GameDTO;
+import com.lightninggames.api.domain.Game;
+import com.lightninggames.api.repository.GameRepository;
+import com.lightninggames.api.services.exception.ObjectNotFoundException;
 
 @Service
 public class GameService {

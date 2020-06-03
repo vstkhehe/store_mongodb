@@ -1,4 +1,4 @@
-package com.lightninggames.store.domain;
+package com.lightninggames.api.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.lightninggames.store.resources.exceptions;
+package com.lightninggames.api.resources.exceptions;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.lightninggames.store.services.exception.ObjectNotFoundException;
+import com.lightninggames.api.services.exception.ObjectNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {

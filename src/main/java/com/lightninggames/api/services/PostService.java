@@ -1,4 +1,4 @@
-package com.lightninggames.store.services;
+package com.lightninggames.api.services;
 
 import java.util.Date;
 import java.util.List;
@@ -7,9 +7,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.lightninggames.store.domain.Post;
-import com.lightninggames.store.repository.PostRepository;
-import com.lightninggames.store.services.exception.ObjectNotFoundException;
+import com.lightninggames.api.domain.Post;
+import com.lightninggames.api.repository.PostRepository;
+import com.lightninggames.api.services.exception.ObjectNotFoundException;
 
 @Service
 public class PostService {

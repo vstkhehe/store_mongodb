@@ -1,4 +1,4 @@
-package com.lightninggames.store.resources.exceptions;
+package com.lightninggames.api.resources.exceptions;
 
 import java.io.Serializable;
 
